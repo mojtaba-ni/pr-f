@@ -1,0 +1,442 @@
+<!doctype html>
+<html class="no-js " lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+
+<title>تاریخچه وزییت ها</title>
+<link rel="icon" href="./assets/images/p1.png"> 
+<!-- Favicon-->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<!-- JQuery DataTable Css -->
+<link rel="stylesheet" href="assets/plugins/jquery-datatable/dataTables.bootstrap4.min.css">
+<!-- Custom Css -->
+<link  rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="theme-blush">
+
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img class="zmdi-hc-spin" src="assets/images/p.png" width="55" height="50" alt="Aero"></div>
+        <p>لطفا صبر کنید...</p>
+    </div>
+</div>
+
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+
+<!-- Main Search -->
+<div id="search">
+    <button id="close" type="button" class="close btn btn-primary btn-icon btn-icon-mini btn-round">x</button>
+    <form>
+      <input type="search" value="" placeholder="جستجو..." />
+      <button type="submit" class="btn btn-primary">جستجو</button>
+    </form>
+</div>
+
+<!-- Right Icon menu Sidebar -->
+
+
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+    <div class="navbar-brand">
+        <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
+        <a href="index-dash.html"><img src="assets/images/p.png" width="65" alt="Aero"><span >دکتر فلانی</span></a>
+    </div>
+    <div class="menu">
+        <ul class="list">
+            <li>
+                <div class="user-info">
+                    <a class="image" href="index-dash.html"><img src="assets/images/ic.png" alt="User"></a>
+                    <div class="detail">
+                        <h4>علیرضا</h4>
+                                               
+                    </div>
+                </div>
+            </li>
+            <li><a href="index-dash.html"><i class="zmdi zmdi-home"></i><span>داشبورد</span></a></li>
+            <li><a href="license.html" ><i class="zmdi zmdi-card"></i><span>لایسنس های شما</span></a>
+                <ul class="ml-menu">
+                                   
+                </ul>
+            </li>
+            <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>مشاوره آنلاین</span></a>
+                <ul class="ml-menu">
+                    <li><a href="visit.html">ویزیت</a></li>
+                    
+                </ul>
+            </li>
+            <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-settings"></i><span>تنظیمات حساب کاربری</span></a>
+                <ul class="ml-menu">
+                    <li><a href="change-inf.html">تغیر اطلاعات</a></li>
+                    <li><a href="ex-Anesthesia.html">تغیر رمزعبور</a></li>
+                    
+                </ul>
+            </li>
+            <li> <a href="b2.html" ><i class="zmdi zmdi-hc-fw"></i><span>صدور قبض  مالی</span></a>
+                <ul class="ml-menu">
+                   
+                   
+                </ul>
+            </li>
+            <li> <a href="check-history.html" ><i class="zmdi zmdi-hc-fw"></i></i><span>تاریخچه ویزیت ها</span></a>
+                <ul class="ml-menu">
+                   
+                </ul>
+            </li>
+            <li> <a href="fish-history..html" ><i class="zmdi zmdi-hc-fw"></i><span>تاریخچه قبوض مالی</span></a>
+                <ul class="ml-menu">
+                   
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+<!-- Right Sidebar -->
+<aside id="rightsidebar" class="right-sidebar">
+    <ul class="nav nav-tabs sm">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#setting"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat"><i class="zmdi zmdi-comments"></i></a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="setting">
+            <div class="slim_scroll">
+                <div class="card">
+                    <h6>گزینه تم</h6>
+                    <div class="light_dark">
+                        <div class="radio">
+                            <input type="radio" name="radio1" id="lighttheme" value="light" checked="">
+                            <label for="lighttheme">حالت روشن</label>
+                        </div>
+                        <div class="radio mb-0">
+                            <input type="radio" name="radio1" id="darktheme" value="dark">
+                            <label for="darktheme">حالت تاریک</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h6>تغییر فونت</h6>
+                    <div class="light_dark">
+                        <div class="radio">
+                            <input type="radio" name="radio2" id="font-iranyekandn" checked="">
+                            <label for="font-iranyekandn">دست نویس</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="radio2" id="font-iranyekan">
+                            <label for="font-iranyekan">ایران یکان</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="radio2" id="font-iransans">
+                            <label for="font-iransans">ایران سانس</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h6>پوسته های رنگی</h6>
+                    <ul class="choose-skin list-unstyled">
+                        <li data-theme="purple"><div class="purple"></div></li>
+                        <li data-theme="blue"><div class="blue"></div></li>
+                        <li data-theme="cyan"><div class="cyan"></div></li>
+                        <li data-theme="green"><div class="green"></div></li>
+                        <li data-theme="orange"><div class="orange"></div></li>
+                        <li data-theme="blush" class="active"><div class="blush"></div></li>
+                    </ul>                                        
+                </div>
+                <div class="card">
+                    <h6>تنظیمات عمومی</h6>
+                    <ul class="setting-list list-unstyled">
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox1" type="checkbox">
+                                <label for="checkbox1">گزارش استفاده از پانل</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox2" type="checkbox" checked="">
+                                <label for="checkbox2">ایمیل تغییر مسیر</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox3" type="checkbox" checked="">
+                                <label for="checkbox3">اطلاعیه ها</label>
+                            </div>                        
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox4" type="checkbox">
+                                <label for="checkbox4">به روز رسانی خودکار</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox5" type="checkbox" checked="">
+                                <label for="checkbox5">آفلاین</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox6" type="checkbox" checked="">
+                                <label for="checkbox6">مجوز محل سکونت</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>                
+            </div>                
+        </div>       
+        <div class="tab-pane right_chat" id="chat">
+            <div class="slim_scroll">
+                <div class="card">
+                    <ul class="list-unstyled">
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar4.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:00 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar5.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:30 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="offline">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar2.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:30 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="me">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar1.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:30 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar3.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:30 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<section class="content">
+    <div class="body_scroll">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <h2>تاریخچه قبوض مالی</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index-dash.html"><i class="zmdi zmdi-home"></i>داشبورد</a></li>
+                        <li class="breadcrumb-item active">تاریخچه قبوض مالی</li>
+                    </ul>
+                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">                
+                                                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <!-- Basic Examples -->
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                        <div  style="background-color: rgb(92, 110, 161); border-radius: 3px;">
+                            
+                        &nbsp;
+                        
+                        </div>
+                        <div class="body" style="border: 2px solid  rgb(92, 110, 161);" >
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable" >
+                                    <thead>
+                                        <tr>
+                                            <th>نام خانوادگی</th>
+                                            <th>شماره پذیرش</th>
+                                            <th>مبلغ نهایی فیش</th>
+                                            <th>شماره سریال فیش</th>
+                                            
+                                        </tr>
+                                    </thead>
+                             
+                                    <tbody>
+                                        <tr>
+                                            <td>احسان طاهری</td>
+                                            <td>14569872</td>          
+                                            <td>1400000 تومان</td>
+                                            <td id="c1" class="list-group-item d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1400/1/24                                                 
+                                                <a href="bt-fish-history.html" class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>امیرحسین صادقلو</td>
+                                            <td>96354877</td>
+                                            <td>3450000 تومان</td>
+                                            <td id="c1" class="list-group-item d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1399/4/12                                                 
+                                                <a href="bt-fish-history.html"  class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>سعید ذولقدر</td>
+                                            <td>69135472</td>
+                                            <td>612000 تومان</td>
+                                            <td id="c1" class="list-group-item d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1400/8/7                                                  
+                                                <a href="bt-fish-history.html"  class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>محیا زارعی</td>
+                                            <td>14753984</td>
+                                            <td>421000 تومان</td>
+                                            <td id="c1" class="list-group-item d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1399/11/2                                                  
+                                                <a href="bt-fish-history.html"  class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>مجید مشاتان</td>
+                                            <td>86957312</td>
+                                            <td>340000 تومان</td>
+                                            <td id="c1" class="list-group-item d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1400/5/29                                                  
+                                                <a href="bt-fish-history.html"  class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>محمد قاسمی</td>
+                                            <td>69845732</td>
+                                            <td>785000 تومان</td>
+                                            <td id="c1" class="list-group-item d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1400/5/24                                                 
+                                                <a href="bt-fish-history.html"  class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>ایمان اسکندری</td>
+                                            <td>34765812</td>
+                                            <td>2540000 تومان</td>
+                                            <td id="c1" class="list-group-item d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1399/1/17                                                 
+                                                <a href="bt-fish-history.html"  class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>مهدی مافی</td>
+                                            <td>64751298</td>
+                                            <td>1250000 تومان</td>
+                                            <td id="c1" class="list-group-item d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1400/2/20                                                
+                                                <a href="bt-fish-history.html"  class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>امیر حسینی</td>
+                                            <td>46871253</td>
+                                            <td>450000 تومان</td>
+                                            <td id="c1" class="list-group-item d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1399/4/9                                                 
+                                                <a href="bt-fish-history.html"  class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>فرشاد حبیبی</td>
+                                            <td>34517829</td>
+                                            <td>210000 تومان</td>
+                                            <td id="c1" class=" d-flex justify-content-between align-items-center " style="background-color: #ebe8e881;">
+                                                1400/8/12                                                
+                                                <a href="bt-fish-history.html"  class="badge badge-primary badge-pill" ><i class="zmdi zmdi-hc-fw"></i></a>
+                                            </td>
+                                            
+                                        </tr>
+                                    
+                                      
+                                     
+                                   
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+           
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+
+<!-- Jquery DataTable Plugin Js --> 
+<script src="assets/bundles/datatablescripts.bundle.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.colVis.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.flash.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.html5.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.print.min.js"></script>
+
+<script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script src="assets/js/pages/tables/jquery-datatable.js"></script>
+</body>
+
+</html>

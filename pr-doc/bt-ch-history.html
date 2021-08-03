@@ -1,0 +1,542 @@
+<!doctype html>
+<html class="no-js " lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+
+<title>صدور قبض مالی</title>
+<!-- Favicon-->
+<link rel="icon" href="./assets/images/p1.png" >
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<!-- Custom Css -->
+<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="theme-blush">
+
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img class="zmdi-hc-spin" src="assets/images/p.png" width="55" height="50" alt="Aero"></div>
+        <p>لطفا صبر کنید...</p>
+    </div>
+</div>
+
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+
+<!-- Main Search -->
+<div id="search">
+    <button id="close" type="button" class="close btn btn-primary btn-icon btn-icon-mini btn-round">x</button>
+    <form>
+      <input type="search" value="" placeholder="جستجو..." />
+      <button type="submit" class="btn btn-primary">جستجو</button>
+    </form>
+</div>
+
+
+
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+    <div class="navbar-brand">
+        <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
+        <a href="index-dash.html"><img src="assets/images/p.png" width="65" alt="دکتر فلانی"><span >دکتر فلانی</span></a>
+    </div>
+    <div class="menu">
+        <ul class="list">
+            <li>
+                <div class="user-info">
+                    <a class="image" href="index-dash.html"><img src="assets/images/ic.png" alt="User"></a>
+                    <div class="detail">
+                        <h4>علیرضا</h4>
+                                              
+                    </div>
+                </div>
+            </li>
+            <li><a href="index-dash.html"><i class="zmdi zmdi-home"></i><span>داشبورد</span></a></li>
+            <li><a href="license.html" ><i class="zmdi zmdi-card"></i><span>لایسنس های شما</span></a></li>
+            <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>مشاوره آنلاین </span></a>
+                <ul class="ml-menu">
+                    <li><a href="visit.html">ویزیت</a></li>
+                    
+                    
+                </ul>
+            </li>
+            <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-settings"></i><span>تنظیمات حساب کاربری</span></a>
+                <ul class="ml-menu">
+                    <li><a href="change-inf.html">تغیر اطلاعات</a></li>
+                    <li><a href="ch-pass.html">تغیر رمز عبور</a></li>
+                </ul>
+            </li>
+            <li> <a href="b2.html" ><i class="zmdi zmdi-hc-fw"></i><span>صدور قبض  مالی</span></a>
+                <ul class="ml-menu">
+                   
+                   
+                </ul>
+            </li>
+            <li> <a href="check-history.html" ><i class="zmdi zmdi-hc-fw"></i><span>تاریخچه ویزیت ها</span></a>
+                <ul class="ml-menu">
+                   
+                </ul>
+            </li>
+            <li> <a href="fish-history..html" ><i class="zmdi zmdi-hc-fw"></i><span>تاریخچه قبوض مالی</span></a>
+                <ul class="ml-menu">
+                   
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+<!-- Right Sidebar -->
+<aside id="rightsidebar" class="right-sidebar">
+    <ul class="nav nav-tabs sm">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#setting"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat"><i class="zmdi zmdi-comments"></i></a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="setting">
+            <div class="slim_scroll">
+                <div class="card">
+                    <h6>گزینه تم</h6>
+                    <div class="light_dark">
+                        <div class="radio">
+                            <input type="radio" name="radio1" id="lighttheme" value="light" checked="">
+                            <label for="lighttheme">حالت روشن</label>
+                        </div>
+                        <div class="radio mb-0">
+                            <input type="radio" name="radio1" id="darktheme" value="dark">
+                            <label for="darktheme">حالت تاریک</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h6>تغییر فونت</h6>
+                    <div class="light_dark">
+                        <div class="radio">
+                            <input type="radio" name="radio2" id="font-iranyekandn" checked="">
+                            <label for="font-iranyekandn">دست نویس</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="radio2" id="font-iranyekan">
+                            <label for="font-iranyekan">ایران یکان</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="radio2" id="font-iransans">
+                            <label for="font-iransans">ایران سانس</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h6>پوسته های رنگی</h6>
+                    <ul class="choose-skin list-unstyled">
+                        <li data-theme="purple"><div class="purple"></div></li>
+                        <li data-theme="blue"><div class="blue"></div></li>
+                        <li data-theme="cyan"><div class="cyan"></div></li>
+                        <li data-theme="green"><div class="green"></div></li>
+                        <li data-theme="orange"><div class="orange"></div></li>
+                        <li data-theme="blush" class="active"><div class="blush"></div></li>
+                    </ul>                                        
+                </div>
+                <div class="card">
+                    <h6>تنظیمات عمومی</h6>
+                    <ul class="setting-list list-unstyled">
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox1" type="checkbox">
+                                <label for="checkbox1">گزارش استفاده از پانل</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox2" type="checkbox" checked="">
+                                <label for="checkbox2">ایمیل تغییر مسیر</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox3" type="checkbox" checked="">
+                                <label for="checkbox3">اطلاعیه ها</label>
+                            </div>                        
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox4" type="checkbox">
+                                <label for="checkbox4">به روز رسانی خودکار</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox5" type="checkbox" checked="">
+                                <label for="checkbox5">آفلاین</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <input id="checkbox6" type="checkbox" checked="">
+                                <label for="checkbox6">مجوز محل سکونت</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>                
+            </div>                
+        </div>       
+        <div class="tab-pane right_chat" id="chat">
+            <div class="slim_scroll">
+                <div class="card">
+                    <ul class="list-unstyled">
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar4.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:00 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar5.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:30 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="offline">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar2.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:30 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="me">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar1.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:30 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar3.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">آرش <small class="float-right">11:30 صبح</small></span>
+                                        <span class="message">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- Main Content -->
+<section class="content">
+    <div class="body_scroll">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <h2>تاریخچه ویزیت ها</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> داشبورد</a></li>
+                        
+                        <li class="breadcrumb-item active">تاریخچه ویزیت ها</li>
+                    </ul>
+                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">                
+                   
+                </div>
+            </div>
+        </div>
+        <body class="bg-light">
+            <div class="contaner">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-11 ">
+                        <div class="row z-depth-3">
+                            <div class="col-sm-4 bg-info rounded-left">
+                                <div class="card-block text-center text-white">
+                                    <br>
+                                    <div class="icon-container" style="padding-top: 33%;">
+                                        <span class="ti-user k1" 
+                                        
+                                        >
+                                        </span>
+                                    </div>
+                                    <form action="">
+                                        <p class="mt-1" style="border: none; margin-left: 3%; text-align: center !important; font-size: 22px; color: rgba(34, 31, 31, 0.863); direction: rtl;">حمیدرضا حقانی</p>
+                                    <br>
+                                    
+                                    <div class="row" style="display: flex;">
+                                        
+                                        <div class="col-sm-12 col-xl-6">
+                                            <h4 class="font-weight-bold mt-1" style="display: flex; padding-right: 7%; "> شماره پرونده :  </h4>
+                                        </div>
+                                        <div class="col-sm-12 col-xl-5">
+                                            <p class="dr-p">4311293454</p>
+                                        </div>
+                                        <div class="col-md-1">
+                                            
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="row" style="display: flex;">
+                                        
+                                        <div class="col-sm-12 col-xl-6">
+                                            <h4 class="font-weight-bold mt-1" style="display: flex; padding-right: 7%; "> تاریخ تولد :  </h4>
+                                        </div>
+                                        <div class="col-sm-12 col-xl-5">
+                                            <p class="dr-birth">1364/6/27</p>
+                                        </div>
+                                        <div class="col-md-1">
+                                            
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                
+                                    
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-8 bg-white rounded-right" style="direction: rtl;">
+                                <form action="">
+                                    <div class="row" style="padding: 1%; margin-top: 1%;">
+                                        <div class="col-md-12 col-xl-6" >
+                                            <div class="body">
+                                                <div class="row " style="display: flex;">
+                                                 <div class="col-sm-12 col-md-12 col-xl-6">
+                                                     <h5 class=" mb-0 dr-b"> بارکد بستری  :</h5>
+                                                 </div>
+                                                 <div class="col-sm-12 col-md-12 col-xl-6">
+                                                    <p class="dr-fi">34587674</p>
+                                                 </div>
+                                                </div>
+                                                <div class="progress">
+                                                 <div class="progress-bar l-blue-" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                             </div>
+                                                
+                                                  
+                                                  
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-xl-6">
+                                            <div class="body">
+                                               <div class="row " style="display: flex;">
+                                                <div class="col-sm-12 col-md-12 col-xl-6">
+                                                    <h5 class="mb-0 dr-b " > پزشک معالج  :</h5>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12 col-xl-6">
+                                                    <p class="dr-fi2">امیر ستوده</p>
+                                                </div>
+                                               </div>
+                                               <div class="progress">
+                                                <div class="progress-bar l-blue-" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                            </div>
+                                               
+                                                 
+                                                 
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-xl-6">
+                                            <div class="body">
+                                                <div class="row " style="display: flex;">
+                                                 <div class="col-sm-12 col-md-12 col-xl-6">
+                                                     <h5 class=" mb-0 dr-b" > عمل جراحی  :</h5>
+                                                 </div>
+                                                 <div class="col-sm-12 col-md-12 col-xl-6">
+                                                    <p class="dr-pars" >پارسیان</p>
+                                                 </div>
+                                                </div>
+                                                <div class="progress">
+                                                 <div class="progress-bar l-blue-" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                             </div>
+                                                
+                                                  
+                                                  
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-xl-6">
+                                            <div class="body">
+                                                <div class="row " style="display: flex;">
+                                                 <div class="col-sm-12 col-md-12 col-xl-6">
+                                                     <h5 class=" mb-0 dr-b" > اورژانس/ الکتیو :</h5>
+                                                 </div>
+                                                 <div class="col-sm-12 col-md-12 col-xl-6">
+                                                    <p class="dr-n" >16894512</p>
+                                                 </div>
+                                                </div>
+                                                <div class="progress">
+                                                 <div class="progress-bar l-blue-" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                             </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="mt-0 mb-0 titr" >  معاینه فیزیکی  </h5>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="body" style="padding: 1%;">
+                                                <div class="row " style="display: flex;">
+                                                 <div class="col-sm-12 col-xl-6">
+                                                     <h5 class=" mb-0 hp5 lin" > سابقه بیماری قلبی و عروقی  :</h5>
+                                                 </div>
+                                                 <div class="col-sm-12 col-xl-6">
+                                                     <p class="sub-h" >HR: /min</p>
+                                                 </div>
+                                                </div>
+                                                <div class="progress">
+                                                 <div class="progress-bar l-blue-" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                             </div>
+                                                
+                                                  
+                                                  
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="body" style="padding: 1%;">
+                                                <div class="row " style="display: flex;">
+                                                 <div class="col-sm-12 col-xl-6">
+                                                     <h5 class=" mb-0 hp5 lin" > بیماری گوارشی  :</h5>
+                                                 </div>
+                                                 <div class="col-sm-12 col-xl-6">
+                                                    <p class="sub-h">L %</p>
+                                                 </div>
+                                                </div>
+                                                <div class="progress">
+                                                 <div class="progress-bar l-blue-" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                             </div>
+                                                
+                                                  
+                                                  
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="body" style="padding: 1%;">
+                                                <div class="row " style="display: flex;">
+                                                 <div class="col-sm-12 col-xl-6">
+                                                     <h5 class=" mb-0 hp5 lin" > بستری CCU  :</h5>
+                                                 </div>
+                                                 <div class="col-sm-12 col-xl-6">
+                                                    <p class="sub-h">HR: /min</p>
+                                                 </div>
+                                                </div>
+                                                <div class="progress">
+                                                 <div class="progress-bar l-blue-" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                             </div>
+                                                
+                                                  
+                                                  
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                           
+                            
+                              
+                                    <br>
+                                    <h5 class="mt-0 mb-0 titr" >  معاینه بیهوشی  </h5>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="body" style="padding: 1%;">
+                                                <div class="row " style="display: flex;">
+                                                 <div class="col-sm-12 col-xl-6">
+                                                     <h5 class="mb-0 hp5 lin" > رفلکس های محیطی  :</h5>
+                                                 </div>
+                                                 <div class="col-sm-12 col-xl-6">
+                                                     <p class="sub-h">RR:  /min</p>
+                                                 </div>
+                                                </div>
+                                                <div class="progress">
+                                                 <div class="progress-bar l-blue-" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                             </div>
+                                                
+                                                  
+                                                  
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="body" style="padding: 1%;">
+                                                <div class="row " style="display: flex;">
+                                                 <div class="col-sm-12 col-xl-6">
+                                                     <h5 class="mt-0 mb-0 hp5 lin" >فاصله تیرومنتال  :</h5>
+                                                 </div>
+                                                 <div class="col-sm-12 col-xl-6">
+                                                     <p class="sub-h">سوفل</p>
+                                                 </div>
+                                                </div>
+                                                <div class="progress">
+                                                 <div class="progress-bar l-blue-" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                             </div>
+                                                
+                                                  
+                                                  
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </form>
+                            </div>
+                           
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </body>
+</section>
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.md-form input {
+  text-align: center;
+}
+
+.md-form label {
+  width: 100%;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all ease-in-out 0.3s;
+}
+
+.md-form label.active {
+  top: -14px;
+  transform: translateX(-40%) translateY(-40%) scale(0.8);
+}
